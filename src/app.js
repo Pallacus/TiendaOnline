@@ -7,7 +7,7 @@ app.use(express.json());
 app.use(cors());
 
 // Configuración de rutas
-
+app.use('/api', require('./routes/api'));
 
 
 module.exports = app;

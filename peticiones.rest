@@ -1,0 +1,59 @@
+GET http://localhost:3000/api/products
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MTNjNmU2N2E1ZWYzZDExMWU4OTAwNSIsInJvbGUiOiJyZWd1bGFyIiwiaWF0IjoxNzEyNTc0NDM2fQ.xindRz65CeKGJv22ERGEJVNkQbGKiQ6y-DSW6-QndKk
+
+###
+GET http://localhost:3000/api/products/Hogar
+
+###
+GET http://localhost:3000/api/products/price/10/max/100
+
+###
+GET http://localhost:3000/api/products/actives
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MTNjNmU2N2E1ZWYzZDExMWU4OTAwNSIsInJvbGUiOiJyZWd1bGFyIiwiaWF0IjoxNzEyNTc0NDM2fQ.xindRz65CeKGJv22ERGEJVNkQbGKiQ6y-DSW6-QndKk
+
+
+###
+POST http://localhost:3000/api/products/
+Content-Type: application/json
+
+{
+    "name": "Thermomix", 
+    "description": "Robot de cocina superchulo", 
+    "price": 1000, 
+    "department": "electrodomesticos", 
+    "available": true, 
+    "stock": 30
+}
+
+###
+POST http://localhost:3000/api/users/register
+Content-Type: application/json
+
+{
+    "name": "albert", 
+    "email": "albert@pallacus.cat", 
+    "password": "12345"
+}
+
+###
+POST http://localhost:3000/api/users/login
+Content-Type: application/json
+
+{
+    "email": "albert@pallacus.cat", 
+    "password": "12345"
+}
+
+###
+GET http://localhost:3000/api/users/6613c6e67a5ef3d111e89005
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MTNjNmU2N2E1ZWYzZDExMWU4OTAwNSIsInJvbGUiOiJyZWd1bGFyIiwiaWF0IjoxNzEyNTc0NDM2fQ.xindRz65CeKGJv22ERGEJVNkQbGKiQ6y-DSW6-QndKk
+
+
+###
+PUT http://localhost:3000/api/products/add_cart
+Content-Type: application/json
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MTNjNmU2N2E1ZWYzZDExMWU4OTAwNSIsInJvbGUiOiJyZWd1bGFyIiwiaWF0IjoxNzEyNTc0NDM2fQ.xindRz65CeKGJv22ERGEJVNkQbGKiQ6y-DSW6-QndKk
+
+{
+    "product_id": "656700c1f88cd33770728582"
+}
