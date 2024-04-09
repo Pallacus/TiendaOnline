@@ -14,19 +14,20 @@ Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MTNjNmU2N2E1ZWYzZ
 
 ###
 POST http://localhost:3000/api/products/
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MTNjNmU2N2E1ZWYzZDExMWU4OTAwNSIsInJvbGUiOiJyZWd1bGFyIiwiaWF0IjoxNzEyNTc0NDM2fQ.xindRz65CeKGJv22ERGEJVNkQbGKiQ6y-DSW6-QndKk
 Content-Type: application/json
 
 {
-    "name": "Thermomix", 
-    "description": "Robot de cocina superchulo", 
-    "price": 1000, 
-    "department": "electrodomesticos", 
+    "name": "Cubo de Rubik", 
+    "description": "Puzle matemático", 
+    "price": 23, 
+    "department": "Juguetes", 
     "available": true, 
-    "stock": 30
+    "stock": 37
 }
 
 ###
-POST http://localhost:3000/api/users/register
+POST https://tiendaonline-bdi9.onrender.com/api/users/register
 Content-Type: application/json
 
 {
